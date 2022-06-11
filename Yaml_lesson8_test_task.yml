@@ -3,49 +3,107 @@ divisions:
   - dept1:
     - emp1:
       name: Olga
-      profession: accountant
+      position: accountant
+      salary: 100000
     - emp2:
       name: Olga
-      profession: accountant
+      position: accountant
+      salary: 100000
     - emp3:
       name: Olga
-      profession: accountant
+      position: accountant
+      salary: 100000
     - emp4:
       name: Olga
-      profession: accountant
+      position: accountant
+      salary: 100000
     - emp5:
       name: Dima
+      salary: 100000
     - emp6:
       name: Dima
+      salary: 100000
     - emp7:
       name: Dima
+      salary: 100000
     - emp8:
       name: Ivan
+      salary: 100000
     - emp9:
-      name: Ivan  
+      name: Ivan 
+      salary: 100000
 
   - dept2:
-      - emp1:
+    - emp1:
       name: Roma
-      profession: layer
-     - emp2:
+      position: layer
+      salary: 60000
+    - emp2:
       name: Roma
-      profession: layer
-     - emp3:
+      position: layer
+      salary: 60000
+    - emp3:
       name: Roma
-      profession: layer
-     - emp4:
+      position: layer
+      salary: 60000
+    - emp4:
       name: Roma
-      profession: layer
+      position: layer
+      salary: 60000
+    - emp5:
+      name: Maxim
+      position: driver
+      salary: 60000
+    - emp6:
+      name: Maxim
+      position: driver
+      salary: 60000
 
   - dept3:
-      - emp1:
+    - emp1:
       name: Olga
-      profession: layer
+      position: layer
+      salary: 60000
+    - emp2:
+      name: Ivan
+      position: builder
+      salary: 60000
+    - emp3:
+      name: Kolya
+      position: builder
+      salary: 60000
 
-  - dept4:
-
-  - dept5:
+  - dept4_dept5:
+    - emp1:
+      name: Yulia
+      position: clerk
+      salary: 80000
+      age: 31
+    - emp2:
+      name: Yulia
+      position: clerk
+      salary: 80000
+      age: 32
+    - emp3:
+      name: Yulia
+      position: clerk
+      salary: 80000
+      age: 31
+    - emp4:
+      name: Yulia
+      position: clerk
+      salary: 80000
+      age: 32
+    - emp5:
+      name: Yulia
+      position: clerk
+      salary: 80000
+      age: 31
 
   - dept6:
+    - emp1:
+      name: Igor Viktorovitch
+      position: director of security dept
+      salary: 70000
+      age: 57
 
