@@ -1,0 +1,51 @@
+---
+divisions:
+  - dept1:
+    - emp1:
+      name: Olga
+      profession: accountant
+    - emp2:
+      name: Olga
+      profession: accountant
+    - emp3:
+      name: Olga
+      profession: accountant
+    - emp4:
+      name: Olga
+      profession: accountant
+    - emp5:
+      name: Dima
+    - emp6:
+      name: Dima
+    - emp7:
+      name: Dima
+    - emp8:
+      name: Ivan
+    - emp9:
+      name: Ivan  
+
+  - dept2:
+      - emp1:
+      name: Roma
+      profession: layer
+     - emp2:
+      name: Roma
+      profession: layer
+     - emp3:
+      name: Roma
+      profession: layer
+     - emp4:
+      name: Roma
+      profession: layer
+
+  - dept3:
+      - emp1:
+      name: Olga
+      profession: layer
+
+  - dept4:
+
+  - dept5:
+
+  - dept6:
+
