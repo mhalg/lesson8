@@ -38,26 +38,32 @@ divisions:
       name: Roma
       position: layer
       salary: 60000
+      age: 21
     - emp2:
       name: Roma
       position: layer
       salary: 60000
+      age: 22
     - emp3:
       name: Roma
       position: layer
       salary: 60000
+      age: 23
     - emp4:
       name: Roma
       position: layer
       salary: 60000
+      age: 24
     - emp5:
       name: Maxim
       position: driver
       salary: 60000
+      age: 25
     - emp6:
       name: Maxim
       position: driver
       salary: 60000
+      age: 26
 
   - dept3:
     - emp1:
@@ -99,6 +105,11 @@ divisions:
       position: clerk
       salary: 80000
       age: 31
+    - emp6:
+      name: Boris Borisovitch
+      position: clerk
+      salary: 80000
+      age: 69
 
   - dept6:
     - emp1:
