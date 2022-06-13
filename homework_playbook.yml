@@ -36,13 +36,9 @@
       args:
         chdir: /tmp/boxfuse-sample-java-war-hello
     - name: "copy war file to webserver "
-      synchronize:
-        src: /tmp/boxfuse-sample-java-war-hello/target/*.war
-        dest: /var/lib/tomcat9/webapps/
-        mode: pull
-        delegate_to: web
-  
-
-
-    
-
+#      synchronize:
+#        src: /tmp/boxfuse-sample-java-war-hello/target/*.war
+#        dest: /var/lib/tomcat9/webapps/
+#        mode: pull
+#      delegate_to: web  
+      shell: scp /tmp/boxfuse-sample-java-war-hello/target/*.war web:/var/lib/tomcat9/webapps/
