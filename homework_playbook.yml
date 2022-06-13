@@ -1,10 +1,10 @@
 ---
 - name: Install tomcat on web
   hosts: web
-    become: yes
+  become: yes
 
-    tasks:
-      - name: "Ensure tomcat installed"
+  tasks:
+    - name: "Ensure tomcat installed"
       apt:
         pkg:
         - tomcat9
@@ -16,25 +16,26 @@
 
   tasks:
     - name: Run the equivalent of "apt-get update" as a separate step
-    apt:
-    update_cache: yes
+      apt:
+      update_cache: yes
     - name: "Ensure that jdk, maven and git are installed"
-    apt:
-      pkg:
-      - default-jdk
-      - git
-      - maven
-      state: installed
+      apt:
+        pkg:
+        - default-jdk
+        - git
+        - maven
+        state: installed
     - name: "Clone jdk app from github"
-    - git:
-      repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
-      dest: /tmp/
-      update: yes
+      git:
+        repo: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+        dest: /tmp/repos/
+        update: yes
+        clone: yes
     - name: "build java app"
-      command: cd /tmp/boxfuse-sample-java-war-hello; mvn package
+      command: cd /tmp/repos/boxfuse-sample-java-war-hello; mvn package
     - name: "copy war file to webserver "
       synchronize:
-        src: /tmp/boxfuse-sample-java-war-hello/target/*.war
+        src: /tmp/repos/boxfuse-sample-java-war-hello/target/*.war
         dest: /var/lib/tomcat9/webapps/
         mode: pull
         delegate_to: web
